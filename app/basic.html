@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic</title>
+    <style>
+        .wrap {
+            display: flex;
+            gap: 10px;
+            flex-direction: row;
+            justify-content: center;
+            /* flex-start, flex-end; */
+            /* space-between, space-around; */
+            align-items: center;
+            /* flex-start, flex-end; */
+            margin: 20px auto;
+            width: 1000px;
+            height: 400px;
+            background: silver;
+        }
+        .box{
+            width: 200px;
+        }
+        #box1 {
+            height: 200px;
+            background: deeppink;
+        }
+        #box2 {
+            height: 300px;
+            background: teal;
+        }
+        #box3 {
+            height: 250px;
+            background: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+    </div>
+</body>
+</html>

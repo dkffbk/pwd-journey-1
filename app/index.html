@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+  </head>
+  <body>
+    <div class="navbar bg-primary navbar-dark navbar-expand">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <i class="fa-solid fa-camera me-2"></i>
+          App
+        </a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">
+              <i class="fa-solid fa-home me-2"></i>
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fa-solid fa-user-circle me-2"></i> About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fa-solid fa-envelope me-2"></i>
+              Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <ul class="nav nav-tabs my-4">
+        <li class="nav-item">
+          <a href="#" class="nav-link active">
+            <i class="fa-solid fa-users me-2"></i>
+            All Users</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fa-solid fa-user-circle"></i>
+            New Users</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+            >Other Users</a
+          >
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item">Daily Users</a>
+            <a href="#" class="dropdown-item">Weekly Users</a>
+            <a href="#" class="dropdown-item">Monthly Users</a>
+          </div>
+        </li>
+      </ul>
+
+      <div class="alert alert-info">
+        <i class="fa solid fa-download me-2"></i>
+        primary, secondary, info, success, warning, danger, dark
+      </div>
+
+      <div class="card bg-success text-light mb-3">
+        <div class="card-header">Card Header</div>
+        <div class="card-body">Card Body</div>
+        <div class="card-footer">Card Footer</div>
+      </div>
+
+      <form class="mb-4">
+        <div class="mb-2">
+          <label for="Name">Name</label>
+          <input type="text" id="name" class="form-control" />
+        </div>
+
+        <div class="mb-2">
+          <label for="address">Address</label>
+          <textarea id="address" class="form-control"></textarea>
+        </div>
+
+        <div class="mb-2">
+          <label for="gender">Gender</label>
+          <select id="gender" class="form-select">
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+          </select>
+        </div>
+
+        <button class="btn btn-secondary">
+          <i class="fa-solid fa-arrow-left fa-me2"></i> Go Back
+        </button>
+        <button class="btn btn-primary">
+          <i class="fa-solid fa-paper-plane me-2"></i>
+          Send Data
+        </button>
+      </form>
+
+      <table class="table table-dark table-bodered table-striped">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Alice</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Bob</td>
+          <td>22</td>
+        </tr>
+      </table>
+
+      <ul class="list-group">
+        <li class="list-group-item">Item One</li>
+        <li class="list-group-item active">Item Two</li>
+        <li class="list-group-item">Item Three</li>
+        <li class="list-group-item">Item Four</li>
+      </ul>
+    </div>
+  </body>
+</html>

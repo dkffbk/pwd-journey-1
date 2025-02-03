@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello JS</title>
+  </head>
+  <body>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <button>Button</button>
+
+    <script>
+      document.querySelector("button").onclick = hello;
+
+      function hello() {
+        var p = document.querySelector("p");
+        p.textContent = "Hello JavaScript..";
+        p.style.background = "deeppink";
+        p.style.padding = "30px";
+        p.style.borderLeft = "4px solid deepskyblue";
+        p.style.color = "red";
+        p.style.borderRadius = "20px";
+      }
+    </script>
+  </body>
+</html>

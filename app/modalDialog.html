@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal Dialog</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: white;
+      }
+
+      body {
+        width: 800px;
+        font-size: 1.2em;
+        margin: 20px auto;
+      }
+      #overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: black;
+        opacity: 0.6;
+        display: none;
+      }
+      #modal {
+        border-radius: 10px;
+        position: absolute;
+        top: -250px;
+        left: 30%;
+        width: 40%;
+        background: #333;
+        height: 250px;
+        transition: top 0.5s;
+      }
+      #modal h2 {
+        border-radius: 10px 10px 0 0;
+        background: #222;
+        color: white;
+        font-size: 1em;
+        margin: 0;
+        padding: 20px;
+      }
+      #modal h2 a {
+        float: right;
+        color: red;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Modal Dialog</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <button>Click Me</button>
+    <div id="overlay"></div>
+    <div id="modal">
+      <h2>Modal Title <a href="#">&times;</a></h2>
+    </div>
+
+    <script>
+      document.querySelector("button").onclick = show;
+      document.querySelector("#overlay").onclick = hide;
+      document.querySelector("#modal h2 a").onclick = hide;
+
+      function hide() {
+        document.querySelector("#overlay").style.display = "none";
+        document.querySelector("#modal").style.top = "-250px";
+      }
+
+      function show() {
+        document.querySelector("#overlay").style.display = "block";
+        document.querySelector("#modal").style.top = "15%";
+      }
+
+      //   let users = [
+      //     { name: "Alice", age: 22 },
+      //     { name: "Bob", age: 20 },
+      //     { name: "Chris", age: 24 },
+      //     { name: "Dave", age: 19 },
+      //     { name: "Eve", age: 18 },
+      //   ];
+
+      //   let names = users.map((user) => user.name);
+      //   let u20 = users.filter((user) => user.age <= 20);
+      //   let u20names = users
+      //     .filter((user) => user.age <= 20)
+      //     .map((user) => user.name);
+
+      //   let bob = {
+      //     name: "Bob",
+      //     hello: function () {
+      //       console.log(`Hello ${this.name}`);
+      //     },
+      //   };
+
+      //   class Animal {
+      //     constructor(name) {
+      //       this.name = name;
+      //     }
+
+      //     hello() {
+      //       console.log(`Hello ${this.name}`);
+      //     }
+      //   }
+
+      //   class Dog extends Animal {
+      //     run() {
+      //       console.log(`${this.name} is running...`);
+      //     }
+      //   }
+
+      //   let dog = new Dog("Bobby");
+    </script>
+  </body>
+</html>
